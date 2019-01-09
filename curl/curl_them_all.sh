@@ -10,7 +10,7 @@ do
  echo "================================================"
  echo "===  $(tput setaf 1)Curl output for: $url$(tput sgr0)  ==="
  echo "================================================" 
-  curl -i -X OPTIONS "https://$url" -m 7
+  curl -i -X OPTIONS "https://$url" -m 5
  echo "================================================"
  echo -e '\n'
 done
