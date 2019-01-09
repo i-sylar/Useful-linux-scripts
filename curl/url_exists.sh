@@ -4,7 +4,7 @@
  #@bit3c0de -> twitter
 for url in $(cat alldomains.txt) 
 do 
-  if curl --output /dev/null --head --silent --fail "$url"; then
+  if curl --output /dev/null --head --silent --fail -m 4 "$url"; then
     echo "------------------------------------------------"
     echo "Valid URL: $url"
     echo "------------------------------------------------"
